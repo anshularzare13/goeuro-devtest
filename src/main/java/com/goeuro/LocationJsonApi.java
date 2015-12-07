@@ -40,6 +40,9 @@ public class LocationJsonApi {
                 }
                 String inputCityName = args[0];
                 List<City> cities = jsonApi.getListOfCities(API_ENDPOINT, args[0]);
+                if(cities==null | cities.isEmpty()){
+                        LOG.warn("No entry found for the given city {}. Please type in correct name", inputCityName);
+                }
                 jsonApi.populateCSVFile(cities, inputCityName.concat(CSV_EXTENSION));
 
         }
