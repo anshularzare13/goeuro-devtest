@@ -1,0 +1,8 @@
+2015-12-07 17:34:42,774  INFO [main] com.goeuro.LocationJsonApi - API end point http://api.goeuro.com/api/v2/position/suggest/en/bangalore
+2015-12-07 17:34:44,616  INFO [main] com.goeuro.LocationJsonApi - Successfully mapped json to POJO
+2015-12-07 17:34:44,616  INFO [main] com.goeuro.LocationJsonApi - Writing into file bangalore.csv
+2015-12-07 17:34:44,810  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 17:35:16,205  INFO [main] com.goeuro.LocationJsonApi - API end point http://api.goeuro.com/api/v2/position/suggest/en/banga
+2015-12-07 17:35:17,736  INFO [main] com.goeuro.LocationJsonApi - Successfully mapped json to POJO
+2015-12-07 17:35:17,737  INFO [main] com.goeuro.LocationJsonApi - Writing into file banga.csv
+2015-12-07 17:35:17,933  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!

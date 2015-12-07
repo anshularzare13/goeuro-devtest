@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+    <appender name="DEFAULT" class="org.apache.log4j.AsyncAppender">
+        <appender-ref ref="ROLLING" />
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="ERR" />
+    </appender>
+
+
+    <appender name="ROLLING" class="org.apache.log4j.RollingFileAppender">
+        <param name="Encoding" value="UTF-8" />
+        <param name="File" value="logs/goeuro.log" />
+        <param name="Threshold" value="TRACE" />
+        <param name="MaxFileSize" value="100MB" />
+        <param name="MaxBackupIndex" value="20" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p [%t] %c - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="OFF" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p [%t] [%X{tenant}-%X{txt}] %c - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="ERR" class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="ERROR"/>
+        <param name="File" value="logs/goeuro-error.log"/>
+        <param name="Append" value="true"/>
+        <param name="MaxFileSize" value="10MB"/>
+        <param name="maxBackupIndex" value="5"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p [%t] [%X{tenant}-%X{txt}] %c - %m%n"/>
+        </layout>
+    </appender>
+
+
+    <logger name="com.goeuro" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="ROLLING"/>
+    </logger>
+
+    <!-- END SPECIFIC OVERRIDES; MOSTLY TEMPORARY -->
+
+</log4j:configuration>
+

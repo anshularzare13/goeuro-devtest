@@ -1,0 +1,15 @@
+2015-12-07 02:36:25,241  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 02:37:52,098  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 03:02:13,347  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 03:04:02,101 TRACE [main] com.goeuro.LocationJsonApi - raw response [{"_id":457183,"key":null,"name":"Mumbai","fullName":"Mumbai, India","iata_airport_code":null,"type":"location","country":"India","geo_position":{"latitude":19.07283,"longitude":72.88261},"locationId":157950,"inEurope":false,"countryCode":"IN","coreCountry":false,"distance":null},{"_id":315361,"key":null,"name":"Mumbai","fullName":"Mumbai (BOM), India","iata_airport_code":"BOM","type":"airport","country":"India","geo_position":{"latitude":19.09048,"longitude":72.86713},"locationId":null,"inEurope":false,"countryCode":"IN","coreCountry":false,"distance":null}]
+2015-12-07 03:04:02,458  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 15:28:21,095  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 15:29:02,125  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 16:43:08,449  INFO [main] com.goeuro.LocationJsonApi - API end point http://api.goeuro.com/api/v2/position/suggest/en/berlin
+2015-12-07 16:43:10,010  INFO [main] com.goeuro.LocationJsonApi - Successfully mapped json to POJO
+2015-12-07 16:43:10,011  INFO [main] com.goeuro.LocationJsonApi - Writing into file {]
+2015-12-07 16:43:10,198  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
+2015-12-07 16:55:04,315  INFO [main] com.goeuro.LocationJsonApi - API end point http://api.goeuro.com/api/v2/position/suggest/en/berlin
+2015-12-07 16:55:06,296  INFO [main] com.goeuro.LocationJsonApi - Successfully mapped json to POJO
+2015-12-07 16:55:06,296  INFO [main] com.goeuro.LocationJsonApi - Writing into file berlin.csv
+2015-12-07 16:55:06,471  INFO [main] com.goeuro.LocationJsonApi - CSV File successfully created. Done!
