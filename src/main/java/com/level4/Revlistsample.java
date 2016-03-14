@@ -31,7 +31,7 @@ public class Revlistsample {
         ListNode l2 = ListNode.CreateListNode(new int[]{1,2,3,4,5});
 
         Revlistsample r = new Revlistsample();
-        ListNode.print(r.reverseList(null));
+        ListNode.print(r.reverseList(l2));
 
     }
 }

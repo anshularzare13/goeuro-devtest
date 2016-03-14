@@ -8,7 +8,7 @@ import java.util.List;
 public class ListNode {
         public int val;
         public ListNode next;
-        ListNode(int x) { val = x; next = null; }
+        public ListNode(int x) { val = x; next = null; }
         ListNode() {next = null;val=0;}
         public void add(int x){val = x;}
 
@@ -30,9 +30,10 @@ public class ListNode {
     public static void print(ListNode head){
 
         while (head!=null){
-            System.out.println(head.val+" ");
+            System.out.print(head.val+" ");
             head = head.next;
         }
+        System.out.println();
     }
 }
 

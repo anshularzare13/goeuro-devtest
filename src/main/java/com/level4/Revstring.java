@@ -30,7 +30,7 @@ public class Revstring {
 
     public static void main(String[] args) {
         Revstring rev = new Revstring();
-        System.out.print(rev.reverseString("b"));
+        System.out.print(rev.reverseString("bdf"));
     }
 }
 

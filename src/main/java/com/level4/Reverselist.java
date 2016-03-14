@@ -1,7 +1,7 @@
 package com.level4;
 
 /**
- * Created by MyMac on 16/02/16.
+ * Created by skyhigh on 16/02/16.
  */
 public class Reverselist {
 
@@ -45,7 +45,7 @@ public class Reverselist {
     public static void main(String[] args) {
         ListNode in = ListNode.CreateListNode(new int[]{1,2,3,4,5});
         Reverselist rev=new Reverselist();
-        ListNode.print(rev.reverseBetween(in,1,4));
+        ListNode.print(rev.reverseBetween(in,1,3));
 
     }
 }
