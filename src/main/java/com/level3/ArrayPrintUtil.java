@@ -18,6 +18,14 @@ public class ArrayPrintUtil {
         }
     }
 
+    public static void print1DArray(ArrayList<Integer> arrayList){
+        for(Integer i :arrayList)
+        {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
 
     public static void print2DArrayString(ArrayList<ArrayList<String>> input){
         for(List<String> Obj : input){

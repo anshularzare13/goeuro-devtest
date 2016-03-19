@@ -7,6 +7,7 @@ public class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+    TreeNode next;
     TreeNode(int x) { val = x; }
     private static  int[] array = null;
     TreeNode(int x, TreeNode t) { val=x;left = null;right=null;}

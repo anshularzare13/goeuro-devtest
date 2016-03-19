@@ -115,7 +115,6 @@ public class ShortestUniquePath {
         for(String s: sq.prefix(new ArrayList<String>(Arrays.asList("zebra","dog","duck","dove")))){
             System.out.print(s+ " ");
         }
-
     }
 
 }
