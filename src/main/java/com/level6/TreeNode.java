@@ -1,5 +1,7 @@
 package com.level6;
 
+import java.util.ArrayList;
+
 /**
  * Created by MyMac on 02/03/16.
  */
@@ -53,7 +55,28 @@ public class TreeNode {
     }
 
     public static void main(String[] args) {
-        TreeNode t = createBinaryTree(new int[]{10,6,15,3,-1,5,9});
+        TreeNode t = createBinaryTree(new int[]{5,3,7,2,4,6,8});
+        System.out.println(nLargeBST(t, 4));
+    }
+
+    public static int nLargeBST(TreeNode root, int n){
+        ArrayList<Integer> array = new ArrayList<>();
+        nLargeBSTVoid(array, root);
+        if(n<=array.size()) {
+            return array.get(n - 1);
+        }
+        return -1;
+    }
+
+    private static void nLargeBSTVoid(ArrayList<Integer> array, TreeNode root) {
+        if(root==null){
+            return;
+        }
+        nLargeBSTVoid(array, root.right);
+        if(root!=null){
+            array.add(root.val);
+        }
+        nLargeBSTVoid(array, root.left);
     }
 
 }

@@ -1,13 +1,9 @@
-package com.hackerrank;
+package com.hackerrank.trie;
 
 /**
  * Created by MyMac on 19/03/16.
  */
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 class Node{
     int value;

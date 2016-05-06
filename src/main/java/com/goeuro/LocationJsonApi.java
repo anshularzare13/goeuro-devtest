@@ -106,5 +106,7 @@ public class LocationJsonApi {
                 } catch (Exception e) {
                         LOG.error("Error writing to csv file ", e);
                 }
+                finally {
+                }
         }
 }

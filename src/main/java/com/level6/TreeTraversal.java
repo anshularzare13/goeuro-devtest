@@ -108,7 +108,7 @@ public class TreeTraversal {
     public static void main(String[] args) {
         TreeNode head=TreeNode.createBinaryTree(new int[]{10,6,15,4,6,5,11  });
         TreeTraversal treeTraversal = new TreeTraversal();
-        for(Integer i : treeTraversal.inorderTraversal1(head)){
+        for(Integer i : treeTraversal.postorderTraversal(head)){
             System.out.print(i + " ");
         }
     }
